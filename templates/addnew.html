@@ -1,0 +1,211 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <form method="POST" action="/addnew">
+
+        <h2>Add New Project</h2>
+        
+        <div class="form-control">
+            <label for="pname">Project Name : {{ user_in["pnamel"] }}</label>
+            <input type="pname" name="pname" placeholder="Project Name">
+        </div>
+        <div class="form-control">
+            <label for="sname">Solution Name : {{ user_in["sname"] }} </label>
+            <input type="sname" name="sname" placeholder="Solution Name">
+        </div>
+        <div class="form-control">
+            <label for="tagline">Tagline : {{ user_in["tagline"] }} </label>
+            <input type="tagline" name="tagline" placeholder="Tagline">
+        </div>
+        <div class="form-control">
+            <label for="keyfeatures">Key Features : {{ user_in["keyfeatures"] }}</label>
+            <input type="keyfeatures" name="keyfeatures" placeholder="Key Features">
+        </div>
+        <div class="form-control">
+            <label for="title">Title : {{ user_in["title"] }}</label>
+            <input type="title" name="title" placeholder="title">
+        </div>
+        <div class="form-control">
+            <label for="profitability">Profitability : {{ user_in["profitability"] }}</label>
+            <input type="profitability" name="profitability" placeholder="Profitability">
+        </div>
+        <div class="form-control">
+            <label for="detail">Details : {{ user_in["detail"] }}</label>
+            <input type="title" name="detail" placeholder="Details">
+        </div>
+        <div class="form-control">
+            <label for="customFile">Upload Media File : {{ user_in["customFile"] }}</label>
+            <input type="file" class="form-control" id="customFile" />
+        </div>
+       <hr>
+   
+
+    <h2>Sustainability Commitmen</h2>
+    <p>select the SDG that applies</p>
+    : {{ user_in["checkbox"] }}
+    <ul>
+        <li>
+          <input type="checkbox" id="myCheckbox1" />
+          <label for="myCheckbox1"><img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /></label>
+        </li>
+        <li>
+      
+          <input type="checkbox" id="myCheckbox2" />
+          <label for="myCheckbox2"><img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /></label>
+        </li>
+        <li>
+      
+          <input type="checkbox" id="myCheckbox3" />
+          <label for="myCheckbox3"><img src="http://www.thebusinessofsports.com/wp-content/uploads/2010/10/facebook-icon-200x200.png" /></label>
+        </li>
+        <li>
+      
+            <input type="checkbox" id="myCheckbox4" />
+            <label for="myCheckbox4"><img src="http://www.thebusinessofsports.com/wp-content/uploads/2010/10/facebook-icon-200x200.png" /></label>
+          </li>
+      </ul>
+
+
+
+      <h2>Sustainability Commitmen</h2>
+    <p>select the SDG that applies</p>
+    
+
+    <ul>
+        <li>
+          <input type="checkbox" id="myCheckbox5" />
+          <label for="myCheckbox5"><img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /></label>
+        </li>
+        <li>
+            <input type="checkbox" id="myCheckbox6" />
+            <label for="myCheckbox6"><img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /></label>
+          </li>
+
+        <li>
+      
+          <input type="checkbox" id="myCheckbox7" />
+          <label for="myCheckbox7"><img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /></label>
+        </li>
+        
+        <li>
+      
+          <input type="checkbox" id="myCheckbox8" />
+          <label for="myCheckbox8"><img src="http://www.thebusinessofsports.com/wp-content/uploads/2010/10/facebook-icon-200x200.png" /></label>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <input type="checkbox" id="myCheckbox9" />
+          <label for="myCheckbox9"><img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /></label>
+        </li>
+        <li>
+            <input type="checkbox" id="myCheckbox10" />
+            <label for="myCheckbox10"><img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /></label>
+          </li>
+          
+        <li>
+      
+          <input type="checkbox" id="myCheckbox11" />
+          <label for="myCheckbox11"><img src="http://townandcountryremovals.com/wp-content/uploads/2013/10/firefox-logo-200x200.png" /></label>
+        </li>
+        
+        <li>
+      
+          <input type="checkbox" id="myCheckbox12" />
+          <label for="myCheckbox12"><img src="http://www.thebusinessofsports.com/wp-content/uploads/2010/10/facebook-icon-200x200.png" /></label>
+        </li>
+      </ul>
+
+
+
+
+    <h2>Registrant Information</h2>
+        <div class="form-control">
+            <label for="organization">Organization : {{ user_in["organization"] }}</label>
+            <input type="organization" name="organization" placeholder="Organization">
+        </div>
+        <br>
+        <div class="form-control">
+            <label for="countryselect">Select Country : {{ user_in["countryselect"] }}</label>
+            <select name="countryselect" id="countryselect">
+           <option value="sl">SL</option>
+           <option value="india">India</option>
+           <option value="uk">UK</option>
+           <option value="us">US</option>
+           </select>
+        </div>
+        <br>
+        
+        <div class="form-control">
+            <label for="title">City of Town : {{ user_in["city","pc","street"] }}</label>
+            <input type="title" name="city" placeholder="City Of Town">
+            <input type="title" name="pc" placeholder="Pass Code">
+            <input type="title" name="street" placeholder="Unit Street Address ">
+        </div>
+        <br>
+
+
+        <div class="form-control">
+            <label for="countryselect">Project Impact Regions: {{ user_in["countryselect"] }}</label>
+            <select name="countryselect" id="countryselect">
+           <option value="sl">SL</option>
+           <option value="india">India</option>
+           <option value="uk">UK</option>
+           <option value="us">US</option>
+           </select>
+        </div>
+        <br>
+        <div class="form-control">
+            <label for="pt">Project Type: {{ user_in["pt"] }} </label>
+            <select name="pt4" id="pt">
+           <option value="pt1">Project Type 1</option>
+           <option value="pt2">Project Type 2</option>
+           <option value="pt3">Project Type 3</option>
+           <option value="pt4">Project Type 4</option>
+           </select>
+        </div>
+        <br>
+        
+        
+        
+        <div class="form-control">
+            <p>Accept Carbon Credit: {{ user_in["radio"] }}</p>
+            
+            
+        
+
+            <input type="radio" id="no" name="credit" value="no">
+            <label for="no">no</label><br>
+            <input type="radio" id="yes" name="credit" value="yes">
+            <label for="yes">yes</label><br>
+        </div>
+        
+        <p>Document Submition: {{ user_in["customFile"] }}</p>
+
+        <div class="form-control">
+            <label for="customFile1">Latter of Intent : {{ user_in["customFile1"] }} </label>
+            <input type="file" class="form-control" id="customFile1" />
+        </div>
+
+        <div class="form-control">
+            <label for="customFile2">Incopperation Latter: {{ user_in["customFile2"] }}</label>
+            <input type="file" class="form-control" id="customFile2" />
+        </div>
+
+        <div class="form-control">
+            <label for="customFile3">Invesment Check: {{ user_in["customFile3"] }}</label>
+            <input type="file" class="form-control" id="customFile3" />
+        </div>
+
+        <div class="form-control">
+            <label for="customFile4">Others: {{ user_in["customFile4"] }}</label>
+            <input type="file" class="form-control" id="customFile4" />
+        </div>
+
+
+        <input type="submit" class="upload-label" value="Submit">
+    </form>
+
+
+{% endblock %}

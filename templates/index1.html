@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container" id="topdiv6">
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Discover Projects</span>
+        
+    </nav>
+    {% if rows %}
+            <div class="row" id="index1">
+                {% for row in rows %}
+                    <div class="card needspace" style="width: 18rem;">
+                        <img src="{{ url_for('static_dir', path = 'images/'+row.filename) }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{row.name}}</h5>
+                            <p class="card-text">{{row.category}}</p>
+                          </div>
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">{{row.title}}</li>
+                            <li class="list-group-item"> {{row.detail}}</li>
+                            
+                          </ul>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+</div>
+
+    
+
+{% endblock %}

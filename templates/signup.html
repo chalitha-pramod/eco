@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+  
+ 
+
+    <form method="POST" action="/signup">
+
+        <h2>Signup</h2>
+        
+        <div class="form-control">
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Email">
+        </div>
+        <div class="form-control">
+            <label for="password">Password:</label>
+            <input type="password" name="password" placeholder="Password">
+        </div>
+        <div class="form-control">
+            <label for="username">User Name:</label>
+            <input type="username" name="username" placeholder="Username">
+        </div>
+        <div class="form-control">
+            <label for="company">company:</label>
+            <input type="company" name="company" placeholder="Username">
+        </div>
+        <div class="form-control">
+            <label for="title">title:</label>
+            <input type="title" name="title" placeholder="title">
+        </div>
+        <div class="form-control">
+            <label for="counrty">Country:</label>
+            <input type="country" name="country" placeholder="country">
+        </div>
+        <div class="form-control">
+            <label for="adress">adress:</label>
+            <input type="adress" name="adress" placeholder="adress">
+        </div>
+        <input type="submit" class="upload-label" value="Sign Up">
+    </form>
+
+
+{% endblock %}

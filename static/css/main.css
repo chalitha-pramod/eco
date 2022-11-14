@@ -1,0 +1,332 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    color: #222;
+    font-family: "Noto Sans HK";
+    position: relative;
+    background-color: rgba(255, 181, 97, 0.3);
+}
+
+/* color values of checkyourself image 
+#DD4839 or rgb(221, 72, 57)
+#EEB584 or rgb(238, 181, 132)*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 0px;
+    z-index: 99;
+    font-size: 1rem;
+    background-color: rgba(20, 0, 205, 0.3);
+}
+
+nav ul{
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    color: #001c99 ;
+}
+
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    color: #001c99 ;
+    text-transform: lowercase;
+    font-size: 16px;
+}
+
+nav ul:first-of-type li a {
+    color: #001c99 ;
+    font-weight: bold;
+}
+
+nav ul li .user-email {
+    text-decoration: none;
+    display: block;
+    color: #001c99 ;
+    text-transform: lowercase;
+    font-size: 12px;
+    font-weight: bold;
+    padding-right: 5%;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+   
+    width: 95%;
+    margin: 100px auto;
+    padding-bottom: 100px;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+form * {
+    display: block;
+}
+
+form a, form textarea{
+    background: rgba(255, 181, 97, 0);
+    width: 100%;
+    font-family: "Noto Sans HK";
+    border: none;
+    border-bottom: 1px solid rgb(4, 0, 245);
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+
+form input, form textarea{
+    background: rgba(255, 181, 97, 0);
+    width: 100%;
+    font-family: "Noto Sans HK";
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 202);
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+
+.error {
+    color: rgb(0, 0, 117);
+    font-style: italic;
+}
+
+.single {
+    width: 50%;
+    margin: 0 auto;
+}
+.single .title {
+    font-size: 3rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper .btn-predict{
+  position: center;
+  padding: 12px 26px;
+  background: #001c99 ;
+  color: #fff;
+  font-size: 1em;
+  transition: all .4s;
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+.wrapper .btn-predict:hover{
+  background: #001c99 ;
+  color: #F5F5F5;
+}
+
+.wrapper{
+  text-align: center;
+}
+
+.texts{
+  position: center;
+  color: #001c99 ;
+}
+
+.paybutton{
+    position: center;
+    color: #001c99 ;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.upload-label{
+  border: none;
+  width: 10%;
+  min-width: 150px;
+  background-color: #001c99 ;
+  color: #ffffff !important;
+  font-weight: 100;
+  font-size: 1.1rem;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  display: inline-block;
+  transition: all 0.1s ease 0s;
+  cursor: pointer;
+}
+
+.upload-label:hover{
+  color: none;
+  font-weight: 400 !important;
+  letter-spacing: 1px;
+  background-color: #001c99 !important;
+  transition: all 0.1s ease 0s;
+}
+
+
+
+
+ul {
+    list-style-type: none;
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  input[type="checkbox"][id^="myCheckbox"] {
+    display: none;
+  }
+  
+  label {
+    border: 1px solid #fff;
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  label:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+  }
+  
+  label img {
+    height: 100px;
+    width: 100px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+  }
+  
+  :checked + label {
+    border-color: #ddd;
+  }
+  
+  :checked + label:before {
+    content: "✓";
+    background-color: grey;
+    transform: scale(1);
+  }
+  
+  :checked + label img {
+    transform: scale(0.9);
+    /* box-shadow: 0 0 5px #333; */
+    z-index: -1;
+  }
+
+
+
+  .signup-w3ls {
+    width: 50%;
+    margin: 70px 25% 80%;
+    padding: 0;
+    display: table;
+    position: relative;
+}
+.signup-agile1{
+    width:100%;
+    float:center;
+}
+
+.signup-w3ls .signup-agile1 .form-control {
+    margin-bottom: 20px;
+}
+label.header {
+    font-size: 16px;
+    font-weight: 500;
+    width: 215px;
+    color: grey;
+    margin-right:10px;
+    text-align:justify;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+}
+input#image,input#store_name, input#store_type,input#owner_type, input#website,input#contact_number,input#contact_email {
+    padding:0 40px;
+    width:40%;
+    height:55px;
+    border: 1px solid #dadada;
+    color: grey;
+    text-align:justify;
+    outline: none;
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight:normal;
+    font-family: 'Muli', sans-serif;
+    border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    -o-border-radius:30px;
+    -ms-border-radius:30px; 
+}
+input#image:focus,input#store_name:focus, input#store_type:focus,input#owner_type:focus, input#website:focus,input#contact_number:focus,input#contact_email:focus  {
+    background-color:#f5f8fa !important;
+    border:1px solid #dadada;
+}
+input::-webkit-input-placeholder {
+color: grey;
+} 
+input:-moz-placeholder { /* Firefox 18- */
+color: grey;  
+} 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: grey;  
+} 
+input:-ms-input-placeholder {  
+color: grey;  
+}
+.register {
+    background-color: lightgreen;
+    width: 52%;
+    height: 55px;
+    border: none;
+    margin-left: 233px;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
+    -ms-border-radius: 30px;
+    font-family: 'Muli', sans-serif;
+}   
+.register:hover {
+    background-color:#36b051;
+    color:#fff;
+}
+
+.cardmap{
+  height: 10%;
+  width: 40%;
+  display: inline-block;
+  box-shadow: 2px 2px 10px black;
+  border-radius: 5px;
+  margin: 05;
+   }
